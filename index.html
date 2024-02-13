@@ -22,70 +22,81 @@
 
     </header>
     <main>
-        <section class="flex gap-5">
+        <section class="flex flex-col lg:flex-row gap-5">
             <!-- card -->
-            <div class="flex-1 grid grid-cols-3 gap-5">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <!-- card-1 -->
-                <div class="card max-w-[437px] border border-cyan-200 p-8">
-                    <img  src="./images/triangle.png" alt="triangle" />
-                    <div class="mt-10 space-y-2 text-center">
+                <div class="card  border border-cyan-200 ">
+                    <figure><img class="mt-10" src="./images/triangle.png" alt="triangle" /></figure>
+                    <div class=" card-body space-y-2 text-center">
                         <h2 class="card-title justify-center text-2xl font-bold">Triangle</h2>
                         <p>Area (A) = 0.5 X b X h</p>
-                        <div class="gap-1">
+                        <div class="space-y-3">
                             <input id="triangle-base" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="b">
-                            <span class="mr-4 text-base">cm</span>
+                            <span class="mr-4 text-base ">cm</span>
                             <input id="triangle-hight" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="h">
                             <span class="text-base">cm</span>
                         </div>
+                        <div>
+                            <p>Area : <span id="triangle-area"> </span><span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-center ">
-                            <button onclick="TriangleAreaCalculate()" class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-9">Calculate</button>
+                            <button onclick="TriangleAreaCalculate()"
+                                class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
-                
                 <!-- card-2 -->
-                <div class="card max-w-[437px] border border-cyan-200 p-8">
-                    <img src="./images/rectangle.png" alt="triangle" />
-                    <div class="mt-10 space-y-2 text-center">
+                <div class="card  border border-cyan-200 ">
+                    <figure><img class="mt-10" src="./images/rectangle.png" alt="rectangle" /></figure>
+                    <div class=" card-body space-y-2 text-center">
                         <h2 class="card-title justify-center text-2xl font-bold">Rectangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
-                        <div class="gap-1">
-                            <input class="w-24 p-2 text-lg rounded-md" type="text" placeholder="b">
+                        <p>Area (A) =  w X l</p>
+                        <div class="space-y-3">
+                            <input id="rectangle-width" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="w">
                             <span class="mr-4 text-base">cm</span>
-                            <input class="w-24 p-2 text-lg rounded-md" type="text" placeholder="h">
+                            <input id="rectangle-lenth" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="l">
                             <span class="text-base">cm</span>
                         </div>
+                        <div>
+                            <p>Area : <span id="rectangle-area"> </span><span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-center ">
-                            <button class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-9">Calculate</button>
+                            <button onclick="RectangleAreaCalculate()" class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- card-3 -->
-                <div class="card max-w-[437px] border border-cyan-200 p-8">
-                    <img src="./images/parallelogram.png" alt="triangle" />
-                    <div class="mt-10 space-y-2 text-center">
+                <div class="card  border border-cyan-200 ">
+                    <figure><img class="mt-10" src="./images/parallelogram.png" alt="parallelogram" /></figure>
+                    <div class="card-body space-y-2 text-center">
                         <h2 class="card-title justify-center text-2xl font-bold">Parallelogram</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
-                        <div class="gap-1">
+                        <p>Area (A) =  b X h</p>
+                        <div class="space-y-3">
                             <input class="w-24 p-2 text-lg rounded-md" type="text" placeholder="b">
                             <span class="mr-4 text-base">cm</span>
                             <input class="w-24 p-2 text-lg rounded-md" type="text" placeholder="h">
                             <span class="text-base">cm</span>
                         </div>
+                        <div>
+                            <p>Area : <span id="parallelogram"> </span><span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-center ">
-                            <button class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-9">Calculate</button>
+                            <button class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-5">Calculate</button>
                         </div>
                     </div>
                 </div>
-                
-                
+
+
+
             </div>
             <!-- Area Calculation -->
-            <div class="max-w-[437px] w-full">
+            <div class="">
                 <p>Area Calculation</p>
             </div>
         </section>
+        <!-- java script links and others  -->
         <script src="./script/triangle.js"></script>
     </main>
 </body>
