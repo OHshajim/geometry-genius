@@ -32,9 +32,9 @@
                         <h2 class="card-title justify-center text-2xl font-bold">Triangle</h2>
                         <p>Area (A) = 0.5 X b X h</p>
                         <div class="space-y-3">
-                            <input id="triangle-base" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="b">
+                            <input id="triangle-base" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="base">
                             <span class="mr-4 text-base ">cm</span>
-                            <input id="triangle-hight" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="h">
+                            <input id="triangle-hight" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="hight">
                             <span class="text-base">cm</span>
                         </div>
                         <div>
@@ -111,14 +111,16 @@
                         </div>
                     </div>
                 </div> 
-                <!-- card-5 -->
+                <!-- card-5- pentagon -->
                 <div class="card  border border-cyan-200 ">
                     <figure><img class="mt-10" src="./images/pentagon.png" alt="pentagon" /></figure>
                     <div class="card-body space-y-2 text-center">
                         <h2 class="card-title justify-center text-2xl font-bold">pentagon</h2>
-                        <p>Area (A) = b X h</p>
+                        <p>Area (A) = 0.5 X p X a</p>
                         <div class="space-y-3">
-                            <input id="pentagon-side" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="Side (a)">
+                            <input id="pentagon-perimeter" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="perimeter">
+                            <span class="text-base">cm</span>
+                            <input id="pentagon-apothem" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="apothem">
                             <span class="text-base">cm</span>
                         </div>
                         <div>
@@ -129,16 +131,17 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- card-6 -->
                 <div class="card  border border-cyan-200 ">
                     <figure><img class="mt-10" src="./images/ellipse.png" alt="ellipse" /></figure>
                     <div class="card-body space-y-2 text-center">
                         <h2 class="card-title justify-center text-2xl font-bold">Ellipse</h2>
-                        <p>Area (A) = b X h</p>
+                        <p>Area (A) = π X a X b</p>
                         <div class="space-y-3">
-                            <input id="ellipse-base" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="a Axis">
+                            <input id="ellipse-major" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="Major">
                             <span class="mr-4 text-base">cm</span>
-                            <input id="ellipse-hight" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="b Axis">
+                            <input id="ellipse-minor" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="minor">
                             <span class="text-base">cm</span>
                         </div>
                         <div>
@@ -163,6 +166,8 @@
         <script src="./script/rectangle.js"></script>
         <script src="./script/parallelogram.js"></script>
         <script src="./script/rhombus.js"></script>
+        <script src="./script/pentagon.js"></script>
+        <script src="./script/ellipse.js"></script>
     </main>
 </body>
 
