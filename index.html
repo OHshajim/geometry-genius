@@ -90,6 +90,65 @@
                         </div>
                     </div>
                 </div>
+               
+                <!-- card-4 -->
+                <div class="card  border border-cyan-200 ">
+                    <figure><img class="mt-10" src="./images/rhombus.png" alt="rhombus" /></figure>
+                    <div class="card-body space-y-2 text-center">
+                        <h2 class="card-title justify-center text-2xl font-bold">Rhombus</h2>
+                        <p>Area (A) = 0.5 X <span>d<sub>1</sub></span> X <span>d<sub>2</sub></span> </p>
+                        <div class="space-y-3">
+                            <input id="rhombus-d1" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="p diagonals">
+                            <span class="mr-4 text-base">cm</span>
+                            <input id="rhombus-d2" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="q diagonals">
+                            <span class="text-base">cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="rhombus-area"> </span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions justify-center ">
+                            <button onclick="rhombusAreaCalculate()" class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-5">Calculate</button>
+                        </div>
+                    </div>
+                </div> 
+                <!-- card-5 -->
+                <div class="card  border border-cyan-200 ">
+                    <figure><img class="mt-10" src="./images/pentagon.png" alt="pentagon" /></figure>
+                    <div class="card-body space-y-2 text-center">
+                        <h2 class="card-title justify-center text-2xl font-bold">pentagon</h2>
+                        <p>Area (A) = b X h</p>
+                        <div class="space-y-3">
+                            <input id="pentagon-side" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="Side (a)">
+                            <span class="text-base">cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="pentagon-area"> </span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions justify-center ">
+                            <button onclick="pentagonAreaCalculate()" class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-5">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="card  border border-cyan-200 ">
+                    <figure><img class="mt-10" src="./images/ellipse.png" alt="ellipse" /></figure>
+                    <div class="card-body space-y-2 text-center">
+                        <h2 class="card-title justify-center text-2xl font-bold">Ellipse</h2>
+                        <p>Area (A) = b X h</p>
+                        <div class="space-y-3">
+                            <input id="ellipse-base" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="a Axis">
+                            <span class="mr-4 text-base">cm</span>
+                            <input id="ellipse-hight" class="w-24 p-2 text-lg rounded-md" type="text" placeholder="b Axis">
+                            <span class="text-base">cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="ellipse-area"> </span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions justify-center ">
+                            <button onclick="ellipseAreaCalculate()" class="btn w-full bg-[#1090D8] text-white text-xl font-bold mt-5">Calculate</button>
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -103,6 +162,7 @@
         <script src="./script/triangle.js"></script>
         <script src="./script/rectangle.js"></script>
         <script src="./script/parallelogram.js"></script>
+        <script src="./script/rhombus.js"></script>
     </main>
 </body>
 
